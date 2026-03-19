@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 680 368" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">
+
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- ── Legend ── -->
+  <rect x="30"  y="14" width="14" height="14" rx="3" fill="#378ADD" opacity="0.85"/>
+  <text x="50"  y="25" fill="#444" font-size="11">Grid (pre-charge)</text>
+  <rect x="168" y="14" width="14" height="14" rx="3" fill="#639922" opacity="0.7"/>
+  <text x="188" y="25" fill="#444" font-size="11">Solar task</text>
+  <rect x="270" y="14" width="14" height="14" rx="3" fill="#1D9E75" opacity="0.55"/>
+  <text x="290" y="25" fill="#444" font-size="11">Solar available</text>
+  <rect x="406" y="14" width="14" height="14" rx="3" fill="#BA7517" opacity="0.55"/>
+  <text x="426" y="25" fill="#444" font-size="11">Battery level</text>
+  <rect x="510" y="14" width="14" height="14" rx="3" fill="#888780" opacity="0.2"/>
+  <text x="530" y="25" fill="#444" font-size="11">Idle</text>
+
+  <!-- ── Slot positions: t0=68 t1=148 t2=228 t3=308 | t4=388 t5=468 t6=548 t7=628 ── -->
+
+  <!-- ── PANEL 1: Solar availability ── -->
+  <text x="30" y="56" fill="#555" font-size="11" font-weight="600">Solar (W)</text>
+  <!-- max bar height = 40, max solar = 12 -->
+  <!-- t0=0, t1=0 -->
+  <rect x="40"  y="88" width="56" height="0" rx="0" fill="#1D9E75" opacity="0.55"/>
+  <rect x="120" y="88" width="56" height="0" rx="0" fill="#1D9E75" opacity="0.55"/>
+  <!-- t2=8 → 27px -->
+  <rect x="200" y="61" width="56" height="27" rx="2" fill="#1D9E75" opacity="0.55"/>
+  <!-- t3=12 → 40px -->
+  <rect x="280" y="48" width="56" height="40" rx="2" fill="#1D9E75" opacity="0.55"/>
+  <!-- window divider -->
+  <line x1="348" y1="44" x2="348" y2="100" stroke="#aaa" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- t4=12 -->
+  <rect x="360" y="48" width="56" height="40" rx="2" fill="#1D9E75" opacity="0.55"/>
+  <!-- t5=8 -->
+  <rect x="440" y="61" width="56" height="27" rx="2" fill="#1D9E75" opacity="0.55"/>
+  <!-- t6,t7=0 -->
+  <rect x="520" y="88" width="56" height="0" rx="0" fill="#1D9E75" opacity="0.55"/>
+  <rect x="600" y="88" width="56" height="0" rx="0" fill="#1D9E75" opacity="0.55"/>
+
+  <text x="228" y="57" text-anchor="middle" fill="#0F6E56" font-size="10">8W</text>
+  <text x="308" y="44" text-anchor="middle" fill="#0F6E56" font-size="10">12W</text>
+  <text x="388" y="44" text-anchor="middle" fill="#0F6E56" font-size="10">12W</text>
+  <text x="468" y="57" text-anchor="middle" fill="#0F6E56" font-size="10">8W</text>
+
+  <line x1="30" y1="90" x2="660" y2="90" stroke="#ccc" stroke-width="0.5"/>
+  <text x="68"  y="104" text-anchor="middle" fill="#888" font-size="10">t0</text>
+  <text x="148" y="104" text-anchor="middle" fill="#888" font-size="10">t1</text>
+  <text x="228" y="104" text-anchor="middle" fill="#888" font-size="10">t2</text>
+  <text x="308" y="104" text-anchor="middle" fill="#888" font-size="10">t3</text>
+  <text x="388" y="104" text-anchor="middle" fill="#888" font-size="10">t4</text>
+  <text x="468" y="104" text-anchor="middle" fill="#888" font-size="10">t5</text>
+  <text x="548" y="104" text-anchor="middle" fill="#888" font-size="10">t6</text>
+  <text x="628" y="104" text-anchor="middle" fill="#888" font-size="10">t7</text>
+
+  <!-- ── PANEL 2: Grid draw + task execution ── -->
+  <text x="30" y="128" fill="#555" font-size="11" font-weight="600">Execution — H-GES</text>
+  <text x="189" y="116" text-anchor="middle" fill="#888" font-size="10">Window 0 (t0–t3)</text>
+  <text x="508" y="116" text-anchor="middle" fill="#888" font-size="10">Window 1 (t4–t7)</text>
+
+  <!-- idle slots -->
+  <rect x="40"  y="136" width="56" height="34" rx="2" fill="#888780" opacity="0.12"/>
+  <rect x="440" y="136" width="56" height="34" rx="2" fill="#888780" opacity="0.12"/>
+  <rect x="520" y="136" width="56" height="34" rx="2" fill="#888780" opacity="0.12"/>
+  <rect x="600" y="136" width="56" height="34" rx="2" fill="#888780" opacity="0.12"/>
+
+  <!-- t1: grid pre-charge 4W (blue, hatched feel via opacity) -->
+  <rect x="120" y="136" width="56" height="34" rx="2" fill="#378ADD" opacity="0.55"/>
+  <text x="148" y="157" text-anchor="middle" fill="#042C53" font-size="10" font-weight="600">pre-charge</text>
+  <text x="148" y="167" text-anchor="middle" fill="#042C53" font-size="10">4W grid</text>
+
+  <!-- t2: solar task τ₁ -->
+  <rect x="200" y="136" width="56" height="34" rx="2" fill="#639922" opacity="0.75"/>
+  <text x="228" y="151" text-anchor="middle" fill="#173404" font-size="10" font-weight="600">τ₁</text>
+  <text x="228" y="163" text-anchor="middle" fill="#173404" font-size="10">solar 4W</text>
+
+  <!-- t3: solar task τ₂ -->
+  <rect x="280" y="136" width="56" height="34" rx="2" fill="#639922" opacity="0.75"/>
+  <text x="308" y="151" text-anchor="middle" fill="#173404" font-size="10" font-weight="600">τ₂</text>
+  <text x="308" y="163" text-anchor="middle" fill="#173404" font-size="10">solar 4W</text>
+
+  <!-- window divider -->
+  <line x1="348" y1="120" x2="348" y2="244" stroke="#aaa" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- t4: solar task τ₃ -->
+  <rect x="360" y="136" width="56" height="34" rx="2" fill="#639922" opacity="0.75"/>
+  <text x="388" y="151" text-anchor="middle" fill="#173404" font-size="10" font-weight="600">τ₃</text>
+  <text x="388" y="163" text-anchor="middle" fill="#173404" font-size="10">solar 4W</text>
+
+  <!-- t0 idle label -->
+  <text x="68"  y="157" text-anchor="middle" fill="#aaa" font-size="10">τ₁ deferred</text>
+  <text x="68"  y="167" text-anchor="middle" fill="#aaa" font-size="10">→ t2</text>
+  <text x="468" y="157" text-anchor="middle" fill="#aaa" font-size="10">—</text>
+  <text x="548" y="157" text-anchor="middle" fill="#aaa" font-size="10">—</text>
+  <text x="628" y="157" text-anchor="middle" fill="#aaa" font-size="10">—</text>
+
+  <line x1="30" y1="174" x2="660" y2="174" stroke="#ccc" stroke-width="0.5"/>
+
+  <!-- ── PANEL 3: Battery level ── -->
+  <text x="30" y="196" fill="#555" font-size="11" font-weight="600">Battery (W·slot)</text>
+  <!-- Battery values: t0=0, t1=4 (after precharge), t2=8 (after solar surplus 4W), t3=10 (cap), t4=10, t5=10, t6~10, t7~10 -->
+  <!-- Represent as step line. Y range: 0–10 → 34px total height at y=210 baseline -->
+  <!-- scale: 1 W·slot = 3.4px, y_base=228 -->
+
+  <!-- Draw battery level as a polyline/step chart -->
+  <!-- t0 start=0: y=228
+       after t0: y=228 (no change)
+       after t1: precharge→4: y=228-14=214
+       after t2: +4 surplus→8: y=228-27=201
+       after t3: +4 surplus→10(cap): y=228-34=194
+       t4 onwards: 10 W·slot stays -->
+  <polyline
+    points="40,228 96,228 96,228 120,228 176,214 200,214 256,201 280,201 336,194 336,194 360,194 648,194"
+    fill="none" stroke="#BA7517" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- shaded area under battery line -->
+  <polygon
+    points="40,228 96,228 120,228 176,214 200,214 256,201 280,201 336,194 360,194 648,194 648,228"
+    fill="#BA7517" opacity="0.12"/>
+
+  <!-- battery level annotations -->
+  <text x="148" y="211" text-anchor="middle" fill="#854F0B" font-size="10">4</text>
+  <text x="228" y="198" text-anchor="middle" fill="#854F0B" font-size="10">8</text>
+  <text x="308" y="191" text-anchor="middle" fill="#854F0B" font-size="10">10 (cap)</text>
+  <text x="508" y="191" text-anchor="middle" fill="#854F0B" font-size="10">~10</text>
+
+  <line x1="30" y1="228" x2="660" y2="228" stroke="#ccc" stroke-width="0.5"/>
+
+  <!-- ── Cost summary ── -->
+  <rect x="40"  y="242" width="290" height="38" rx="6" fill="#378ADD" opacity="0.08" stroke="#378ADD" stroke-width="0.5" stroke-opacity="0.5"/>
+  <text x="185" y="258" text-anchor="middle" fill="#185FA5" font-size="11" font-weight="600">Window 0: 4 W·slot → $0.033</text>
+  <text x="185" y="273" text-anchor="middle" fill="#185FA5" font-size="10">(pre-charge at t1 only, Tier 1 rate)</text>
+
+  <rect x="348" y="242" width="294" height="38" rx="6" fill="#639922" opacity="0.08" stroke="#639922" stroke-width="0.5" stroke-opacity="0.5"/>
+  <text x="495" y="258" text-anchor="middle" fill="#27500A" font-size="11" font-weight="600">Window 1: 0 W·slot → $0.000</text>
+  <text x="495" y="273" text-anchor="middle" fill="#27500A" font-size="10">(all tasks on solar+battery)</text>
+
+  <!-- Total -->
+  <rect x="180" y="290" width="320" height="28" rx="6" fill="#1D9E75" opacity="0.12" stroke="#1D9E75" stroke-width="0.5" stroke-opacity="0.6"/>
+  <text x="340" y="309" text-anchor="middle" fill="#085041" font-size="12" font-weight="600">Total cost: $0.033 · Solar harvested: 12 W·slot</text>
+
+  <!-- savings badge -->
+  <rect x="220" y="328" width="240" height="26" rx="6" fill="#E24B4A" opacity="0.1" stroke="#E24B4A" stroke-width="0.5" stroke-opacity="0.5"/>
+  <text x="340" y="345" text-anchor="middle" fill="#A32D2D" font-size="11" font-weight="600">67% cheaper than NaiveGrid</text>
+
+</svg>

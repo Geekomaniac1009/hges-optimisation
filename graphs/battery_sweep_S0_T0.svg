@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="420" font-family="Arial,sans-serif" font-size="12">
+<rect width="700" height="420" fill="white"/>
+<text x="350" y="25" text-anchor="middle" font-size="15" font-weight="bold">Grid Cost vs Battery Capacity (S0_T0)</text>
+<line x1="90" y1="360.0" x2="520" y2="360.0" stroke="#e0e0e0" stroke-width="0.5"/>
+<text x="82" y="364.0" text-anchor="end" font-size="10">262K</text>
+<line x1="90" y1="308.3" x2="520" y2="308.3" stroke="#e0e0e0" stroke-width="0.5"/>
+<text x="82" y="312.3" text-anchor="end" font-size="10">279K</text>
+<line x1="90" y1="256.7" x2="520" y2="256.7" stroke="#e0e0e0" stroke-width="0.5"/>
+<text x="82" y="260.7" text-anchor="end" font-size="10">296K</text>
+<line x1="90" y1="205.0" x2="520" y2="205.0" stroke="#e0e0e0" stroke-width="0.5"/>
+<text x="82" y="209.0" text-anchor="end" font-size="10">313K</text>
+<line x1="90" y1="153.3" x2="520" y2="153.3" stroke="#e0e0e0" stroke-width="0.5"/>
+<text x="82" y="157.3" text-anchor="end" font-size="10">330K</text>
+<line x1="90" y1="101.7" x2="520" y2="101.7" stroke="#e0e0e0" stroke-width="0.5"/>
+<text x="82" y="105.7" text-anchor="end" font-size="10">346K</text>
+<line x1="90" y1="50.0" x2="520" y2="50.0" stroke="#e0e0e0" stroke-width="0.5"/>
+<text x="82" y="54.0" text-anchor="end" font-size="10">363K</text>
+<line x1="90.0" y1="360" x2="90.0" y2="365" stroke="#333"/>
+<text x="90.0" y="380" text-anchor="middle" font-size="10">0</text>
+<line x1="161.7" y1="360" x2="161.7" y2="365" stroke="#333"/>
+<text x="161.7" y="380" text-anchor="middle" font-size="10">2000</text>
+<line x1="233.3" y1="360" x2="233.3" y2="365" stroke="#333"/>
+<text x="233.3" y="380" text-anchor="middle" font-size="10">4000</text>
+<line x1="305.0" y1="360" x2="305.0" y2="365" stroke="#333"/>
+<text x="305.0" y="380" text-anchor="middle" font-size="10">8000</text>
+<line x1="376.7" y1="360" x2="376.7" y2="365" stroke="#333"/>
+<text x="376.7" y="380" text-anchor="middle" font-size="10">10000</text>
+<line x1="448.3" y1="360" x2="448.3" y2="365" stroke="#333"/>
+<text x="448.3" y="380" text-anchor="middle" font-size="10">15000</text>
+<line x1="520.0" y1="360" x2="520.0" y2="365" stroke="#333"/>
+<text x="520.0" y="380" text-anchor="middle" font-size="10">20000</text>
+<line x1="90" y1="50" x2="90" y2="360" stroke="#333" stroke-width="1.5"/>
+<line x1="90" y1="360" x2="520" y2="360" stroke="#333" stroke-width="1.5"/>
+<text x="305" y="410" text-anchor="middle" font-size="12">Battery Capacity (W·slot)</text>
+<text x="15" y="205" text-anchor="middle" font-size="12" transform="rotate(-90,15,205)">Grid Cost ($)</text>
+<path d="M90.0,183.3 L161.7,183.3 L233.3,183.3 L305.0,183.3 L376.7,183.3 L448.3,183.3 L520.0,183.3" fill="none" stroke="#888888" stroke-width="1.5" stroke-dasharray="8,4"/>
+<circle cx="90.0" cy="183.3" r="3" fill="#888888"/>
+<circle cx="161.7" cy="183.3" r="3" fill="#888888"/>
+<circle cx="233.3" cy="183.3" r="3" fill="#888888"/>
+<circle cx="305.0" cy="183.3" r="3" fill="#888888"/>
+<circle cx="376.7" cy="183.3" r="3" fill="#888888"/>
+<circle cx="448.3" cy="183.3" r="3" fill="#888888"/>
+<circle cx="520.0" cy="183.3" r="3" fill="#888888"/>
+<path d="M90.0,183.3 L161.7,175.4 L233.3,167.4 L305.0,149.8 L376.7,145.1 L448.3,127.2 L520.0,102.8" fill="none" stroke="#3498db" stroke-width="1.5" stroke-dasharray="6,3"/>
+<circle cx="90.0" cy="183.3" r="3" fill="#3498db"/>
+<circle cx="161.7" cy="175.4" r="3" fill="#3498db"/>
+<circle cx="233.3" cy="167.4" r="3" fill="#3498db"/>
+<circle cx="305.0" cy="149.8" r="3" fill="#3498db"/>
+<circle cx="376.7" cy="145.1" r="3" fill="#3498db"/>
+<circle cx="448.3" cy="127.2" r="3" fill="#3498db"/>
+<circle cx="520.0" cy="102.8" r="3" fill="#3498db"/>
+<path d="M90.0,219.2 L161.7,219.5 L233.3,219.6 L305.0,219.6 L376.7,219.6 L448.3,219.7 L520.0,219.8" fill="none" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4,2"/>
+<circle cx="90.0" cy="219.2" r="3" fill="#e74c3c"/>
+<circle cx="161.7" cy="219.5" r="3" fill="#e74c3c"/>
+<circle cx="233.3" cy="219.6" r="3" fill="#e74c3c"/>
+<circle cx="305.0" cy="219.6" r="3" fill="#e74c3c"/>
+<circle cx="376.7" cy="219.6" r="3" fill="#e74c3c"/>
+<circle cx="448.3" cy="219.7" r="3" fill="#e74c3c"/>
+<circle cx="520.0" cy="219.8" r="3" fill="#e74c3c"/>
+<path d="M90.0,219.2 L161.7,216.1 L233.3,212.3 L305.0,205.2 L376.7,201.4 L448.3,196.6 L520.0,189.2" fill="none" stroke="#2ecc71" stroke-width="1.5" stroke-dasharray="2,2"/>
+<circle cx="90.0" cy="219.2" r="3" fill="#2ecc71"/>
+<circle cx="161.7" cy="216.1" r="3" fill="#2ecc71"/>
+<circle cx="233.3" cy="212.3" r="3" fill="#2ecc71"/>
+<circle cx="305.0" cy="205.2" r="3" fill="#2ecc71"/>
+<circle cx="376.7" cy="201.4" r="3" fill="#2ecc71"/>
+<circle cx="448.3" cy="196.6" r="3" fill="#2ecc71"/>
+<circle cx="520.0" cy="189.2" r="3" fill="#2ecc71"/>
+<path d="M90.0,219.2 L161.7,254.9 L233.3,254.2 L305.0,251.3 L376.7,250.9 L448.3,249.4 L520.0,248.8" fill="none" stroke="#9b59b6" stroke-width="1.5" stroke-dasharray="10,3"/>
+<circle cx="90.0" cy="219.2" r="3" fill="#9b59b6"/>
+<circle cx="161.7" cy="254.9" r="3" fill="#9b59b6"/>
+<circle cx="233.3" cy="254.2" r="3" fill="#9b59b6"/>
+<circle cx="305.0" cy="251.3" r="3" fill="#9b59b6"/>
+<circle cx="376.7" cy="250.9" r="3" fill="#9b59b6"/>
+<circle cx="448.3" cy="249.4" r="3" fill="#9b59b6"/>
+<circle cx="520.0" cy="248.8" r="3" fill="#9b59b6"/>
+<path d="M90.0,219.2 L161.7,219.5 L233.3,219.5 L305.0,219.5 L376.7,219.6 L448.3,219.7 L520.0,219.8" fill="none" stroke="#f39c12" stroke-width="1.5" stroke-dasharray="4,4"/>
+<circle cx="90.0" cy="219.2" r="3" fill="#f39c12"/>
+<circle cx="161.7" cy="219.5" r="3" fill="#f39c12"/>
+<circle cx="233.3" cy="219.5" r="3" fill="#f39c12"/>
+<circle cx="305.0" cy="219.5" r="3" fill="#f39c12"/>
+<circle cx="376.7" cy="219.6" r="3" fill="#f39c12"/>
+<circle cx="448.3" cy="219.7" r="3" fill="#f39c12"/>
+<circle cx="520.0" cy="219.8" r="3" fill="#f39c12"/>
+<path d="M90.0,219.2 L161.7,247.2 L233.3,241.9 L305.0,236.9 L376.7,234.9 L448.3,233.1 L520.0,233.2" fill="none" stroke="#1abc9c" stroke-width="1.5" stroke-dasharray="6,2,2,2"/>
+<circle cx="90.0" cy="219.2" r="3" fill="#1abc9c"/>
+<circle cx="161.7" cy="247.2" r="3" fill="#1abc9c"/>
+<circle cx="233.3" cy="241.9" r="3" fill="#1abc9c"/>
+<circle cx="305.0" cy="236.9" r="3" fill="#1abc9c"/>
+<circle cx="376.7" cy="234.9" r="3" fill="#1abc9c"/>
+<circle cx="448.3" cy="233.1" r="3" fill="#1abc9c"/>
+<circle cx="520.0" cy="233.2" r="3" fill="#1abc9c"/>
+<path d="M90.0,219.2 L161.7,290.5 L233.3,287.7 L305.0,283.6 L376.7,283.0 L448.3,282.7 L520.0,282.7" fill="none" stroke="#e91e63" stroke-width="2.5"/>
+<circle cx="90.0" cy="219.2" r="4" fill="#e91e63"/>
+<circle cx="161.7" cy="290.5" r="4" fill="#e91e63"/>
+<circle cx="233.3" cy="287.7" r="4" fill="#e91e63"/>
+<circle cx="305.0" cy="283.6" r="4" fill="#e91e63"/>
+<circle cx="376.7" cy="283.0" r="4" fill="#e91e63"/>
+<circle cx="448.3" cy="282.7" r="4" fill="#e91e63"/>
+<circle cx="520.0" cy="282.7" r="4" fill="#e91e63"/>
+<line x1="535" y1="60" x2="555" y2="60" stroke="#888888" stroke-width="2"/>
+<circle cx="545" cy="60" r="3" fill="#888888"/>
+<text x="560" y="64" font-size="11">NaiveGrid</text>
+<line x1="535" y1="78" x2="555" y2="78" stroke="#3498db" stroke-width="2"/>
+<circle cx="545" cy="78" r="3" fill="#3498db"/>
+<text x="560" y="82" font-size="11">SDC</text>
+<line x1="535" y1="96" x2="555" y2="96" stroke="#e74c3c" stroke-width="2"/>
+<circle cx="545" cy="96" r="3" fill="#e74c3c"/>
+<text x="560" y="100" font-size="11">GG</text>
+<line x1="535" y1="114" x2="555" y2="114" stroke="#2ecc71" stroke-width="2"/>
+<circle cx="545" cy="114" r="3" fill="#2ecc71"/>
+<text x="560" y="118" font-size="11">SP+SDC</text>
+<line x1="535" y1="132" x2="555" y2="132" stroke="#9b59b6" stroke-width="2"/>
+<circle cx="545" cy="132" r="3" fill="#9b59b6"/>
+<text x="560" y="136" font-size="11">Lyapunov</text>
+<line x1="535" y1="150" x2="555" y2="150" stroke="#f39c12" stroke-width="2"/>
+<circle cx="545" cy="150" r="3" fill="#f39c12"/>
+<text x="560" y="154" font-size="11">SF-Only</text>
+<line x1="535" y1="168" x2="555" y2="168" stroke="#1abc9c" stroke-width="2"/>
+<circle cx="545" cy="168" r="3" fill="#1abc9c"/>
+<text x="560" y="172" font-size="11">GF-Only</text>
+<line x1="535" y1="186" x2="555" y2="186" stroke="#e91e63" stroke-width="2"/>
+<circle cx="545" cy="186" r="3" fill="#e91e63"/>
+<text x="560" y="190" font-size="11" font-weight="bold">H-GES</text>
+</svg>
