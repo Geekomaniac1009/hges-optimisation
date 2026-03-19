@@ -49,7 +49,7 @@ The edge server operates across three time scales: a **task slot** (15 ms) for A
 
 ### H-GES (proposed) — three algorithms
 
-**Algorithm 1 — Inter-Window Planner.** Before execution, sweeps candidate pre-charge fractions $\alpha \in \{0\%, 5\%, \ldots, 100\%\}$ over predicted solar/task traces, then fine-tunes around the winner in 1% steps. The selected $\alpha$ balances the benefit of filling the battery cheaply against leakage losses.
+**Algorithm 1 — Inter-Window Planner.** Before execution, sweeps candidate pre-charge fractions $\alpha$ $\in$ {0\%, 5\%, ..., 100\%} over predicted solar/task traces, then fine-tunes around the winner in 1% steps. The selected $\alpha$ balances the benefit of filling the battery cheaply against leakage losses.
 
 **Algorithm 2 — Intra-Window Planner.** Executes each energy slot in four phases: (A) solar + battery discharge serve tasks from the offline EDF plan; (B) remaining deadline-constrained tasks draw from grid, with battery providing marginal support; (C) unused cheap-tier headroom charges the battery up to fraction $\alpha$; (D) residual solar surplus is banked.
 
@@ -71,7 +71,7 @@ The edge server operates across three time scales: a **task slot** (15 ms) for A
 
 ---
 
-## 🔍 Toy Example: How H-GES Works
+## 🔍 Sample Example: How H-GES Works
 
 To build intuition, consider a simplified **8-slot, 2-window** horizon. We use a linear power model ($P = 4U$ W) and unit-utilization tasks. Three AV compute tasks arrive:
 
@@ -217,30 +217,6 @@ chmod +x run_all.sh && ./run_all.sh
 python3 plot_results.py \
     --csv results/battery_sweep.csv results/error_sweep.csv results/leakage_sweep.csv \
     --outdir graphs/
-```
-
----
-
-## 🧪 Demo — Simplified Example
-
-The `demo/` folder contains a self-contained minimal simulation on synthetic inputs that runs without the full dataset.
-
-**Assumptions and simplifications:**
-
-| Parameter | Full experiment | Demo |
-|:----------|:----------------|:-----|
-| Time horizon | 1440 slots (24 h) | 10 slots |
-| Tasks | Real-life AV trace | 3 synthetic tasks, $u_i = 1$ |
-| Solar | Real rooftop data | Step: `[0,0,5,10,15,10,5,0,0,0]` W |
-| Battery cap | Swept 0–20,000 | Fixed 20 W·slot |
-| Billing window | 60 slots | 5 slots |
-| Leakage $h_l$ | Swept 0.50–0.99 | Fixed 0.99 |
-| Tier thresholds | 120/240 W-hr/hr | 30/60 W·slot |
-| Prediction error | Swept 0–20% | None |
-
-```bash
-cd demo
-chmod +x demo.sh && ./demo.sh
 ```
 
 ---
