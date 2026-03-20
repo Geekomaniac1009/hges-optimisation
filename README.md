@@ -27,16 +27,13 @@ Roadside edge servers supporting autonomous vehicles (AVs) must complete latency
 │   ├── error_sweep.csv
 │   └── leakage_sweep.csv
 ├── graphs/               # SVG plots produced by plot_results.py
-│   ├── battery_sweep_S0_T0.svg
-│   ├── battery_sweep_S5_T5.svg
-│   ├── battery_sweep_S10_T10.svg
-│   ├── battery_sweep_S20_T20.svg
-│   ├── error_rate_bat10000.svg
-│   └── leakage_bat10000.svg
-└── demo/                 # Minimal self-contained demo (simplified inputs)
-    ├── demo.cpp
-    ├── demo.sh
-    └── demo_graphs/
+    ├── battery_sweep_S0_T0.svg
+    ├── battery_sweep_S5_T5.svg
+    ├── battery_sweep_S10_T10.svg
+    ├── battery_sweep_S20_T20.svg
+    ├── error_rate_bat10000.svg
+    └── leakage_bat10000.svg
+
 ```
 
 ---
@@ -62,9 +59,9 @@ The edge server operates across three time scales: a **task slot** (15 ms) for A
 | Method | Description |
 |:-------|:------------|
 | **NaiveGrid** | All tasks on grid at arrival; no solar or battery. Worst-case cost reference. |
-| **GG** (Grid-Greedy) | Offline solar for fitting tasks; remaining tasks execute immediately on grid at arrival. |
+| **PSG** (Planned Solar-Greedy) | Offline solar for fitting tasks; remaining tasks execute immediately on grid at arrival. |
 | **SDC** | Online look-behind grid leveling via battery (charges valleys, discharges peaks). Solar-unaware. |
-| **SP+SDC** | Offline solar schedule + SDC for residual grid tasks; battery split between solar and grid buffers. |
+| **PSG+SDC** | Offline solar schedule + SDC for residual grid tasks; battery split between solar and grid buffers. |
 | **Lyapunov** | Drift-plus-penalty online control: charges when virtual queue $Q(t) = \text{battery} - \theta < 0$, discharges when $Q > 0$. |
 | **SF-Only** | H-GES with $\alpha = 0$ (no pre-charging). Grid only fills genuine solar+battery shortfalls. |
 | **GF-Only** | H-GES with $\alpha = 1$ (always fills cheap-tier headroom). Ignores leakage cost. |
